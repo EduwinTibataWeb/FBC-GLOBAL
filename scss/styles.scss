@@ -1,0 +1,21 @@
+@import "components/normalize";
+@import "components/variables";
+@import "components/menu";
+@import "components/home";
+@import "components/constructora";
+@import "components/proyecto";
+h1, h2,
+h3, h4{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import "components/footer";
+@import "components/responsive";

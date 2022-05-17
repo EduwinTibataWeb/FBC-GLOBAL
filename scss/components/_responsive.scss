@@ -1,0 +1,131 @@
+@media screen and (max-width: 1024px) {
+    .info_header{
+        display: none;
+    }
+    .cont_menu{
+        margin: 0;
+    }
+    .slider_header{
+        &::after{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .cont_menu{
+        margin: 0;
+        flex-direction: column;
+    }
+    ul.menu_items{
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease-in;
+        li{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+            a{
+                padding: 1em 0;
+                font-size: 1em;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+    .menu_icon{
+        display: flex;
+        div{
+            transition: all .3s;
+        }
+    }
+    .menu_active{
+        padding-top: 2em !important;
+        max-height: 500px !important;
+    }
+    .icon_active{
+        div:first-child{
+            position: absolute !important;
+            transform:rotate(45deg);
+        }
+        div:nth-child(2){
+            display: none;
+        }
+        div:last-child{
+            position: absolute !important;
+            transform:rotate(-45deg);
+        }
+    }
+    .slider_header{
+        min-height: 300px;
+    }
+    .cont_cont_us{
+        flex-direction: column;
+    }
+    .btn_blanco{
+        margin-top: 2em;
+        a{
+            font-size: 1em;
+        }
+    }
+    .text_cont{
+        text-align: center;
+        h2{
+            font-size: 2em;
+        }
+    }
+    .carta_historia{
+        figcaption{
+            padding: 3em 1em;
+        }
+    }
+    .cont_img_historia{
+        height: 300px;
+    }
+    .cont_historia .carta_historia:first-child{
+        .cont_img_historia{
+            display: none;
+        }
+    }
+    .cont_exitos{
+        transform: translateY(0);
+        article{
+            margin-top: 3em;
+        }
+    }
+    .form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cont-all-formulario{
+        flex-direction: column;
+    }
+    .texto_baner{
+        text-align: center;
+        h1{
+            font-size: 2em;
+        }
+    }
+    .cont_proyectos{
+        grid-template-columns: 1fr;
+    }
+    .footer_info{
+        flex-direction: column;
+    }
+    .animation_left{
+        figure{
+            transform: translateY(10%);     
+        }
+        div{
+            transform: translateY(10%);
+        }
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .slider_testimonial h2{
+        font-size: 1.3em;
+    }
+}
