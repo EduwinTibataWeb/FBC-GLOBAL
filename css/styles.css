@@ -1285,6 +1285,10 @@ ul.footer_menu {
     font-size: 2em; }
 
   .slider_testimonial h2 {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  .footer_info article {
+    padding: 1em 0;
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
