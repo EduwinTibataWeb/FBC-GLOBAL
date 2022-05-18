@@ -1,3 +1,51 @@
+@media screen and (min-width: 1200px){
+    .organigrama1{
+            position: relative;
+            &::after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 140px;
+                height: 5px;
+                right: -40%;
+                bottom: 2em;
+                background: rgba($color: $rojo-color, $alpha: .4);
+            }
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 140px;
+                height: 5px;
+                right: -40%;
+                top: 2em;
+                background: rgba($color: $rojo-color, $alpha: .4);
+            }
+    }
+    .organigrama2{
+        position: relative;
+        &::after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            left: -10%;
+            bottom: 50%;
+            background: rgba($color: $rojo-color, $alpha: .4);
+        }
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 45px;
+            right: 50%;
+            top: -50px;
+            background: rgba($color: $rojo-color, $alpha: .4);
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .info_header{
         display: none;
@@ -10,6 +58,13 @@
             width: 150px;
             height: 150px;
         }
+    }
+    .bloque_2{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cont-fcb{
+        width: 100%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -127,5 +182,18 @@
     }
     .slider_testimonial h2{
         font-size: 1.3em;
+    }
+    .footer_info article{
+        padding: 1em 0;
+        text-align: center;
+    }
+    .bloque_2{
+        grid-template-columns: 1fr;
+        div:first-child{
+            grid-column:inherit;
+        }
+    }
+    .tarjeta{
+        flex-direction: column;
     }
 }

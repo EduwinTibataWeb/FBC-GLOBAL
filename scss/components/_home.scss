@@ -1,16 +1,24 @@
 .parte_dos_home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
     background: #e6e6e6;    
 }
 .bloque_1{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-    padding: 4em 0;
+}
+.bloque_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-fcb{
+    width: 50%
+}
+.cont_otros_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .animation_top{
@@ -40,17 +48,18 @@
 .tarjeta{
     pointer-events: none;
     display: flex;
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 380px;
     justify-content: center;
     align-items: center;
     animation: deAbajo 2s;
+    padding: 1em;
     figcaption{
         width: 300px;
         color: $azul-color;
         font-weight: 600;
         padding-left: 1em;
-        word-break:keep-all;
+        text-align: center;
     }
 }
 .cont_img_figure{
@@ -70,9 +79,7 @@
 }
 .tarjeta_2{
     display: flex;
-    width: 100%;
     max-width: 390px;
-    min-height: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: center;

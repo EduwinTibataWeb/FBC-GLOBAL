@@ -503,18 +503,26 @@ ul.menu_items {
   100% {
     background-image: url(../assets/slider_6.webp); } }
 .parte_dos_home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
   background: #e6e6e6; }
 
 .bloque_1 {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 1200px;
-  padding: 4em 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.bloque_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cont-fcb {
+  width: 50%; }
+
+.cont_otros_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
 
 .animation_top figure {
@@ -538,17 +546,18 @@ ul.menu_items {
 .tarjeta {
   pointer-events: none;
   display: flex;
-  width: 100%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 380px;
   justify-content: center;
   align-items: center;
-  animation: deAbajo 2s; }
+  animation: deAbajo 2s;
+  padding: 1em; }
   .tarjeta figcaption {
     width: 300px;
     color: #3f4f9e;
     font-weight: 600;
     padding-left: 1em;
-    word-break: keep-all; }
+    text-align: center; }
 
 .cont_img_figure {
   width: 100px;
@@ -566,9 +575,7 @@ ul.menu_items {
 
 .tarjeta_2 {
   display: flex;
-  width: 100%;
   max-width: 390px;
-  min-height: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1179,6 +1186,48 @@ ul.footer_menu {
     color: #fff;
     text-decoration: none; }
 
+@media screen and (min-width: 1200px) {
+  .organigrama1 {
+    position: relative; }
+    .organigrama1::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 140px;
+      height: 5px;
+      right: -40%;
+      bottom: 2em;
+      background: rgba(236, 50, 55, 0.4); }
+    .organigrama1::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 140px;
+      height: 5px;
+      right: -40%;
+      top: 2em;
+      background: rgba(236, 50, 55, 0.4); }
+
+  .organigrama2 {
+    position: relative; }
+    .organigrama2::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 40px;
+      height: 5px;
+      left: -10%;
+      bottom: 50%;
+      background: rgba(236, 50, 55, 0.4); }
+    .organigrama2::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 5px;
+      height: 45px;
+      right: 50%;
+      top: -50px;
+      background: rgba(236, 50, 55, 0.4); } }
 @media screen and (max-width: 1024px) {
   .info_header {
     display: none; }
@@ -1188,7 +1237,14 @@ ul.footer_menu {
 
   .slider_header::after {
     width: 150px;
-    height: 150px; } }
+    height: 150px; }
+
+  .bloque_2 {
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+  .cont-fcb {
+    width: 100%; } }
 @media screen and (max-width: 700px) {
   .cont_menu {
     margin: 0;
@@ -1285,6 +1341,18 @@ ul.footer_menu {
     font-size: 2em; }
 
   .slider_testimonial h2 {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  .footer_info article {
+    padding: 1em 0;
+    text-align: center; }
+
+  .bloque_2 {
+    grid-template-columns: 1fr; }
+    .bloque_2 div:first-child {
+      grid-column: inherit; }
+
+  .tarjeta {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=styles.css.map */
